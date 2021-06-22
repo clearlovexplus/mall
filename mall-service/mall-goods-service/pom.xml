@@ -3,24 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>gupaoedu-vip-mail</artifactId>
+        <artifactId>mall-service</artifactId>
         <groupId>com.gupaoedu</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <modules>
-        <module>mall-service-dependency</module>
-        <module>mall-common</module>
-    </modules>
-    <artifactId>mall-util</artifactId>
+
+    <artifactId>mall-goods-service</artifactId>
+
     <description>
-        管理所有工具工程
+        shop_goods数据库的增删改查
     </description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gupaoedu</groupId>
+            <artifactId>mall-goods-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
